@@ -1,0 +1,83 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&display=swap');
+
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* body */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: black;
+    min-width: 320px;
+}
+h1{
+    color: white;
+    margin: 40px 0 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 135px; */
+    background-color: white;
+    padding: 20px 10px;
+    margin: 20px 0;
+    gap: 20px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+#rdm-article{
+    font-size: 1.2rem;
+}
+label{
+    font-size: 1.2rem;
+    display: block;
+}
+input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 130px;
+}
+.row{
+    background-color: white;
+    padding: 20px;
+    margin: 10px 10px;
+    max-width: 900px;
+}
+.row a{
+    display: block;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+a:hover{
+    box-shadow: 0 1px rgb(44, 44, 44);
+    padding-bottom: 3px;
+    color: rgb(43, 43, 43);
+}
+p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+@media (min-width: 450px) {
+    header{
+        gap: 130px;
+    }
+    label{
+        display: inline-block;
+    }
+}
